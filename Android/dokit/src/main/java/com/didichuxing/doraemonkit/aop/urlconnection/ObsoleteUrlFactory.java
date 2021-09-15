@@ -1313,10 +1313,19 @@ final class ObsoleteUrlFactory implements URLStreamHandlerFactory, Cloneable {
             if (sslSocketFactory == null) {
                 throw new IllegalArgumentException("sslSocketFactory == null");
             }
-            // This fails in JDK 9 because OkHttp is unable to extract the trust manager.
-            delegate.client = delegate.client.newBuilder()
-                    .sslSocketFactory(sslSocketFactory)
-                    .build();
+            //edit here
+            try {
+                TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
+                trustManagerFactory.init((KeyStore) null);
+                TrustManager[] trustManagers = trustManagerFactory.getTrustManagers();
+                if (trustManagers.length != 1 || !(trustManagers[0] instanceof X509TrustManager)) {
+                    throw new IllegalStateException("Unexpected default trust managers:" + Arrays.toString(trustManagers));
+                }
+                X509TrustManager trustManager = (X509TrustManager) trustManagers[0];
+                delegate.client = delegate.client.newBuilder().sslSocketFactory(sslSocketFactory, trustManager).build();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
         @Override
