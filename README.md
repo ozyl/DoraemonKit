@@ -1,8 +1,9 @@
 - [简介](#简介)
+- [领域生态](#领域生态)
+- [使用手册](#使用手册)
+- [更新日志](#更新日志)
 - [社区活动](#社区活动)
-- [外部合作](#外部合作)
 - [开发背景](#开发背景)
-- [效果演示](#效果演示)
 - [功能模块](#功能模块)
   - [一、平台工具(www.dokit.cn)](#一平台工具wwwdokitcn)
   - [二、常用工具](#二常用工具)
@@ -11,23 +12,23 @@
   - [五、Weex专项工具（CML专项工具）](#五weex专项工具cml专项工具)
   - [六、支持自定义的业务工具集成到面板中](#六支持自定义的业务工具集成到面板中)
   - [七、微信小程序专项工具](#七微信小程序专项工具)
-- [使用手册](#使用手册)
 - [相关文档](#相关文档)
-- [更新日志](#更新日志)
-- [微信交流群](#微信交流群)
+- [微信交流群(已满员，近期不会开设二群，看后期人数)](#微信交流群已满员近期不会开设二群看后期人数)
 - [QQ 交流群](#qq-交流群)
 - [微信公众号](#微信公众号)
 - [项目成员](#项目成员)
 - [协议](#协议)
 - [使用提醒](#使用提醒)
+- [外部合作](#外部合作)
 - [友情链接](#友情链接)
 
 ## 简介
 <div align="center">    
- <img src="https://javer.oss-cn-shanghai.aliyuncs.com/doraemon/github/DoraemonKit_github.png" width = "150" height = "150" alt="DoraemonKit" align=left />
+ <img src="https://pt-starimg.didistatic.com/static/starimg/img/J0WO7tUi9U1616143930629.png" width = "250"  alt="DoraemonKit" align=left />
  <img src="https://img.shields.io/github/license/didi/DoraemonKit.svg" align=left />
- <img src="https://img.shields.io/badge/Android-3.3.4-blue.svg" align=left />
- <img src="https://img.shields.io/badge/iOS-3.0.4-yellow.svg" align=left />
+ <img src="https://img.shields.io/badge/Android-3.5.0-blue.svg" align=left />
+ <img src="https://img.shields.io/badge/iOS-3.0.7-yellow.svg" align=left />
+ <img src="https://img.shields.io/badge/Flutter-0.6.0-blue.svg" align=left />
  <img src="https://img.shields.io/badge/miniapp-0.0.1-red.svg" align=left />
  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" align=left />
 </div>
@@ -39,22 +40,28 @@
 <br/>
 <br/>
 
-**DoraemonKit** /'dɔ:ra:'emɔn/，简称`DoKit`，中文名 `哆啦A梦`，意味着能够像哆啦A梦一样提供给他的主人各种各样的工具。Just Do Kit
+DoKit诞生于滴滴城运服体验技术部，是一款面向泛前端产品研发全生命周期的效率平台。经过两年的发展，当前DoKit已经发展成了一个相对完整的生态，比如DoKit For Android、DoKit For iOS、DoKit For 小程序、DoKit For Flutter、DoKit For Web。同时我们的项目被BAT以及滴滴、字节、快手、京东等等头部独角兽企业广泛使用并获得良好的口碑。随着dokit.cn平台端的推出，标志着DoKit已经从单纯的效率工具正式进入了效率工具平台的阶段。与此同时我们一直都未停下持续探索的精神，积极地在更多平台领域进行尝试，不给自己设限。我们相信DoKit的未来充满无限可能。
 
 > [English Readme](README_EN.md)
 
+## 领域生态
+
+<div align="center">    
+  <img src="https://pt-starimg.didistatic.com/static/starimg/img/WRUdiWDsw71626696344680.jpg" width = "900" alt="DoKit 首页效果演示" align=center />
+</div>
+
+## 使用手册
+访问[DoKit官网](https://www.dokit.cn/)，点击"[使用中心](http://xingyun.xiaojukeji.com/docs/dokit/#/intro)"。
+
+**温馨提示：当前DoKit的所有功能都只针对Debug环境，Release环境未经过实际验证，所以请大家严格按照官方文档来集成，也不建议大家在Release环境上使用DoKit的任何功能。如果大家一定要在Release环境上使用，请自行进行充分的测试和验证，DoKit官方将不承担任何责任和损失。** 
+## 更新日志
+
+- [Android-ReleaseNotes](http://xingyun.xiaojukeji.com/docs/dokit/#/AndroidReleaseNote)
+- [iOS-ReleaseNotes](Doc/iOS-ReleaseNotes.md)
+- [微信小程序-ReleaseNotes](Doc/miniapp-ReleaseNotes.md)
+- [DoKit For Flutter-ReleaseNotes](Flutter/README.md)
 
 ## 社区活动
-
-**InfoQ年度十大开源项目评选**
-
-小伙伴们，DoKit正在参加infoQ举办的年度十大开源项目评选，麻烦你们东东小手指扫描一下二维码给30号Doraemonkit投个票,谢谢.
-
-<img src="https://pt-starimg.didistatic.com/static/starimg/img/5U2jWuIKA11604566692827.jpg" alt="图片替换文本" width="200"  align="bottom" />
-
-
-<img src="https://pt-starimg.didistatic.com/static/starimg/img/k3HTEc305O1604566698026.jpg" alt="图片替换文本" width="200"  align="bottom" />
-
 
 **DoKit官方社区分享季**
 你想让你的才华被更多的人关注到吗？快来参加[DoKit官方社区分享季](https://github.com/didi/DoraemonKit/issues/658)活动吧
@@ -68,31 +75,23 @@
   <img src="https://pt-starimg.didistatic.com/static/starimg/img/INLjGkp9wN1597062733948.jpg" width = "250" alt="DoKit 首页效果演示" align=center />
 </div>
 
-## 外部合作
 
-**2020中国开源年会DoKit社区合作伙伴**
-
-<img src="https://pt-starimg.didistatic.com/static/starimg/img/hoEGfdsUzi1600745052153.jpg" alt="图片替换文本" width="200"  align="bottom" />
 
 ## 开发背景
 
-每一个稍微有点规模的 App，总会自带一些线下的测试功能代码，比如环境切换功能、帧率查看功能等等，这些功能的切换入口往往放在各式各样的入口中，比如一些特殊的手势，双击 statusBar，双击某一个功能区块，或者新建一个 keyWindow 始终至于 App 最上方等等，而且每一个 App 里面的线下附带功能模块很多是相似的，比如帧率查看、内存和 CPU 监控等等，但是现在基本上都是每个 App 都是自己实现了一份，经历了以上的问题之后，DoraemonKit 就有了它存在的意义。
+每一个稍微有点规模的 App，总会自带一些线下的测试功能代码，比如环境切换功能、帧率查看功能等等，这些功能的切换入口往往放在各式各样的入口中，比如一些特殊的手势，双击 statusBar，双击某一个功能区块，或者新建一个 keyWindow 始终至于 App 最上方等等，而且每一个 App 里面的线下附带功能模块很多是相似的，比如帧率查看、内存和 CPU 监控等等，但是现在基本上都是每个 App 都是自己实现了一份，经历了以上的问题之后，DoKit 就有了它存在的意义。
 
-DoraemonKit 是一个功能平台，能够让每一个 App 快速接入一些常用的或者你没有实现的一些辅助开发工具、测试效率工具、视觉辅助工具，而且能够完美在 Doraemon 面板中接入你已经实现的与业务紧密耦合的一些非通有的辅助工具，并搭配我们的[dokit](https://www.dokit.cn)平台，让功能得到延伸，接入方便，便于扩展。
+DoKit 是一个功能平台，能够让每一个 App 快速接入一些常用的或者你没有实现的一些辅助开发工具、测试效率工具、视觉辅助工具，而且能够完美在 Doraemon 面板中接入你已经实现的与业务紧密耦合的一些非通有的辅助工具，并搭配我们的[dokit](https://www.dokit.cn)平台，让功能得到延伸，接入方便，便于扩展。
 
 **简单总结**
 
-1、DoraemonKit 能够快速让你的业务测试代码能够在这里统一管理，统一收口；  
+1、DoKit 能够快速让你的业务测试代码能够在这里统一管理，统一收口；  
 
-2、DoraemonKit 内置很多常用的工具，避免重复实现，一次接入，你将会拥有强大的工具集合；
+2、DoKit 内置很多常用的工具，避免重复实现，一次接入，你将会拥有强大的工具集合；
 
-3、搭配dokit平台，借助[接口Mock](https://www.dokit.cn/#/index/dataMockPage)、[健康体检](https://www.dokit.cn/#/index/checkDataPage)、[文件同步助手](https://www.dokit.cn/#/index/fileSyncPage)让你方便和他人协同，极大的提升研发过程中的效率。
+3、搭配dokit平台，借助[接口Mock](https://www.dokit.cn/#/index/dataMockPage)、[健康体检](https://www.dokit.cn/#/index/checkDataPage)、[文件同步助手](https://www.dokit.cn/#/index/fileSyncPage)、[一机多控]()让你方便和他人协同，极大的提升研发过程中的效率。
 
-## 效果演示
 
-<div align="center">    
-  <img src="https://pt-starimg.didistatic.com/static/starimg/img/H1SVa0S6Zm1585189141793.jpg" width = "250" alt="DoKit 首页效果演示" align=center />
-</div>
 
 ## 功能模块
 
@@ -100,6 +99,7 @@ DoraemonKit 是一个功能平台，能够让每一个 App 快速接入一些常
 1. **【数据Mock】** App接口Mock解决方案，提供一套基于App网络拦截的接口Mock方案，无需修改代码即可完成对于接口数据的Mock。
 2. **【健康体检】** 一键式操作，整合DoKit多项工具，数据可视化，快速准确定位问题，让你对app的性能了如指掌。
 3. **【文件同步助手】** 通过终端服务，让你的终端空间在平台端完整的展现并提供强大的文件以及数据库操作能力。
+4. **【一机多控】** 主从同步，释放人力，让研发测试效率提升看得见
 
 ### 二、常用工具
 
@@ -136,7 +136,7 @@ DoraemonKit 是一个功能平台，能够让每一个 App 快速接入一些常
 1. **【颜色吸管】** 方便设计师 UI 捉虫的时候，查看每一个组件的颜色值是否设置正确；
 2. **【组件检查】** 可以抓取任意一个UI控件，查看它们的详细信息，包括控件名称、控件位置、背景色、字体颜色、字体大小；
 3. **【对齐标尺】** 参考 Android 系统自带测试工具，能够实时捕获屏幕坐标，并且可以查看组件是否对齐；
-4. **【元素边框线】** 绘制出每一个 UI 组件的边框，对于组件布局有一定的参考意义。 
+4. **【元素边框线】** 绘制出每一个 UI 组件的边框，对于组件布局有一定的参考意义。
 
 ### 五、Weex专项工具（CML专项工具）
 
@@ -155,15 +155,14 @@ tips ： 如果使用我们滴滴优秀的开源跨端方案 [chameleon](https:/
 
 详见 [Doraemon mini program debugger](https://github.com/didi/DoraemonKit/tree/master/miniapp)
 
-## 使用手册
-访问 [https://www.dokit.cn/](https://www.dokit.cn/)，点击"使用中心"。
+
 
 ## 相关文档
-- [iOS 研发助手 DoraemonKit 技术实现（一）](https://www.jianshu.com/p/00763123dbc4)
-- [iOS 研发助手 DoraemonKit 技术实现（二）](https://blog.csdn.net/weixin_33847182/article/details/91472599)
+- [iOS 研发助手 DoKit 技术实现（一）](https://www.jianshu.com/p/00763123dbc4)
+- [iOS 研发助手 DoKit 技术实现（二）](https://blog.csdn.net/weixin_33847182/article/details/91472599)
 - [DoKit支持iOS本地crash查看功能](https://juejin.im/post/5d76184ce51d4561d106cc65)
-- [开源组件 DoraemonKit 之 Android 版本技术实现（一）](https://blog.csdn.net/weixin_33711647/article/details/88004429)
-- [开源组件 DoraemonKit 之 Android 版本技术实现（二）](https://blog.csdn.net/weixin_34148456/article/details/88004414)
+- [开源组件 DoKit 之 Android 版本技术实现（一）](https://blog.csdn.net/weixin_33711647/article/details/88004429)
+- [开源组件 DoKit 之 Android 版本技术实现（二）](https://blog.csdn.net/weixin_34148456/article/details/88004414)
 - [DoKit支持Activity启动耗时统计方案](https://juejin.im/post/5d70bc3051882571ed61e407)
 - [DoKit 微信小程序SDK对外发布](https://juejin.im/post/5d9bf252518825095c3c5e32)
 - [滴滴DoKit2.0 - 泛前端开发者的百宝箱](https://juejin.im/post/5dc3cdfa51882538d22d5948)
@@ -171,15 +170,11 @@ tips ： 如果使用我们滴滴优秀的开源跨端方案 [chameleon](https:/
 - [滴滴DoKit Android核心原理揭秘之函数耗时](https://juejin.im/post/5eba5ce15188256d6f268c98)
 - [滴滴DoKit Android核心原理揭秘之AOP字节码实现](https://juejin.im/post/6891887877613944840)
 
-## 更新日志
 
-- [iOS-ReleaseNotes](Doc/iOS-ReleaseNotes.md)
-- [Android-ReleaseNotes](Doc/android-ReleaseNotes.md)
-- [微信小程序-ReleaseNotes](Doc/miniapp-ReleaseNotes.md)
 
-## 微信交流群
+## 微信交流群(已满员，近期不会开设二群，看后期人数)
 
-扫描以下二维码或者搜索**jintsky**加我微信入群，注意请添加备注：DoKit社区用户，否则你的申请将不会被验证通过。
+扫描以下二维码或者搜索**jintsky**加我微信好友，注意请添加备注：昵称-DoKit社区用户，否则你的申请将不会被验证通过。
 
 <div align="center">    
  <img src="https://pt-starimg.didistatic.com/static/starimg/img/f4gsSRtscV1601274280794.jpg" width = "160"  alt="微信交流群" align=left />
@@ -235,24 +230,27 @@ tips ： 如果使用我们滴滴优秀的开源跨端方案 [chameleon](https:/
 
 ## 项目成员
 
-**发起者**
+**创始人**
 [yixiangboy(易翔)](https://github.com/yixiangboy)
 **负责人**
 [jtsky(金台)](https://github.com/jtsky) 
 
 **内部核心成员**
-[yixiangboy](https://github.com/yixiangboy)
+[yixiangboy](https://github.com/yixiangboy)、
 [jtsky](https://github.com/jtsky) 、
-[ydlsl](https://github.com/ydlsl) 、
-[jayconscious](https://github.com/jayconscious)
+[LinJZong](https://github.com/LinJZong) 、
+[jayconscious](https://github.com/jayconscious) 、
+[xukaibin](https://github.com/xu984386604) 、
+[jellybean](https://github.com/excitedhaha)
 
 **贡献者榜单**
-[LinJZong](https://github.com/LinJZong) 、
+[changzuozhen](https://github.com/changzuozhen)、
 [wanglikun7342](https://github.com/wanglikun7342) 、
-[wenquanlebao](https://github.com/wenquanlebao) 、
+[wenquanlebao](https://github.com/wenquanlebao) 、 
 [hiXgb](https://github.com/hiXgb) 、 
 [Chinnko](https://github.com/Chinnko) 、 
-[y644938647](https://github.com/y644938647) 、 
+[y644938647](https://github.com/y644938647) 、
+[wm219](https://github.com/wm219)、 
 [goolong](https://github.com/goolong) 、
 [miracle9312](https://github.com/miracle9312) 、
 [lwhsgz123](https://github.com/lwhsgz123)、
@@ -274,7 +272,8 @@ tips ： 如果使用我们滴滴优秀的开源跨端方案 [chameleon](https:/
 [sagdragon](https://github.com/sagdragon) 、
 [ccworld1000](https://github.com/ccworld1000) 、
 [HDB-Li](https://github.com/HDB-Li)、
-[yu-jianfeng](https://github.com/yu-jianfeng)
+[yu-jianfeng](https://github.com/yu-jianfeng)、
+[ydlsl](https://github.com/ydlsl)
 
 如何成为外部贡献者？ 提交有意义的PR，并被采纳。
 
@@ -283,7 +282,7 @@ tips ： 如果使用我们滴滴优秀的开源跨端方案 [chameleon](https:/
 
 <img alt="Apache-2.0 license" src="https://www.apache.org/img/ASF20thAnniversary.jpg" width="128">
 
-DoraemonKit 基于 Apache-2.0 协议进行分发和使用，更多信息参见 [协议文件](LICENSE)。
+DoKit 基于 Apache-2.0 协议进行分发和使用，更多信息参见 [协议文件](LICENSE)。
 
 ## 使用提醒
 因为SDK目前会配合[dokit.cn](http://www.dokit.cn/)平台, 会产生一些网络数据，这些信息我们收集绝不用于任何恶意用途。
@@ -317,17 +316,26 @@ DoraemonKit 基于 Apache-2.0 协议进行分发和使用，更多信息参见 [
 
 敬请各位用户知晓。
 
+## 外部合作
+
+**2020中国开源年会DoKit社区合作伙伴**
+
+<div align="center">  
+<img src="https://pt-starimg.didistatic.com/static/starimg/img/hoEGfdsUzi1600745052153.jpg" alt="图片替换文本" width="200"  align="bottom" />
+</div>
 
 ## 友情链接
-1. [Chameleon]( https://github.com/didi/chameleon)，简写CML，中文意思变色龙，意味着就像变色龙一样能适应不同环境的跨端整体解决方案，达到真正意义上"一套代码，多端运行"的终极目标
-   
-2. [Booster](https://github.com/didi/booster) 是一款专门为移动应用设计的易用、轻量级且可扩展的质量优化框架，其目标主要是为了解决随着 APP 复杂度的提升而带来的性能、稳定性、包体积等一系列质量问题。Booster 提供了性能检测、多线程优化、资源索引内联、资源去冗余、资源压缩、系统 Bug 修复等一系列功能模块，可以使得稳定性能够提升 15% ~ 25%，包体积可以减小 1MB ~ 10MB。**同时DoKit插件的底层也是基于Booster进行开发的。**
+1. [Hummer](https://github.com/didi/Hummer)，Hummer 是一套高性能高可用的跨端开发框架，一套代码可以同时支持开发 Android 和 iOS 应用。现已经支持 Vue/TypeScript/JavaScript 三种语法，面向大前端开发人员，总有一款适合你。
 
-3. [AoE](https://github.com/didi/AoE)，一个终端侧AI集成运行时环境 
+2. [Chameleon]( https://github.com/didi/chameleon)，简写CML，中文意思变色龙，意味着就像变色龙一样能适应不同环境的跨端整体解决方案，达到真正意义上"一套代码，多端运行"的终极目标
    
-4. [Mand Mobile](https://github.com/didi/mand-mobile) 一款优秀的面向金融场景的 移动端UI组件库
+3. [Booster](https://github.com/didi/booster) 是一款专门为移动应用设计的易用、轻量级且可扩展的质量优化框架，其目标主要是为了解决随着 APP 复杂度的提升而带来的性能、稳定性、包体积等一系列质量问题。Booster 提供了性能检测、多线程优化、资源索引内联、资源去冗余、资源压缩、系统 Bug 修复等一系列功能模块，可以使得稳定性能够提升 15% ~ 25%，包体积可以减小 1MB ~ 10MB。**同时DoKit插件的底层也是基于Booster进行开发的。**
+
+4. [AoE](https://github.com/didi/AoE)，一个终端侧AI集成运行时环境 
+   
+5. [Mand Mobile](https://github.com/didi/mand-mobile) 一款优秀的面向金融场景的 移动端UI组件库
    
 
-5. 我们部门的技术公众号（普惠出行产品技术公众号），欢迎关注。
-   **公众号介绍：这里是滴滴出行旗下普惠产品技术团队对外分享的窗口，普惠出行支撑滴滴代驾、货运等业务，建设了NodeX、Dokit、卡梅隆等开源项目，始终秉承聚心成事、聚气育人的原则。欢迎各位技术同仁一起交流，共同成长。**
-  ![普惠技术公众号](https://pt-starimg.didistatic.com/static/starimg/img/oOCoP5tVJs1600416407154.jpg)
+6. 我们团队的技术公众号【滴滴OrangeLab】，欢迎关注，我们会在这里持续输出团队内部比较有深度的技术沉淀和经验分享，欢迎一起交流。
+<img src="https://pt-starimg.didistatic.com/static/starimg/img/cPlaMme4g81616682162304.jpg" width = "250" />
+ 

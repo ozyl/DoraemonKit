@@ -1,5 +1,133 @@
 DoraemonKit-Android releases
 ===
+
+## 3.5.0.1
+
+1、bug fixed
+
+2、DoKit For Android Kotlin 编译插件版本为1.3.72，支持Gradle 6.8及以下版本
+
+3、相关功能对应3.5.0
+
+## 3.5.0
+
+1、bug fixed
+
+2、DoKit For Android Kotlin 编译插件版本为1.4.32，支持Gradle 6.8及以上版本
+
+
+## 3.5.0.1-beta01
+
+1、Support AGP 7.0
+
+2、DoKit For Android Kotlin 编译插件版本为1.3.72，支持Gradle 6.8及以下版本
+
+3、相关功能对应3.5.0-beta01
+
+## 3.5.0-beta01
+
+1、Support AGP 7.0
+
+2、DoKit For Android Kotlin 编译插件版本为1.4.32，支持Gradle 6.8及以上版本
+
+
+## 3.4.3.1
+
+1、DoKit For Android Kotlin 编译插件版本为1.3.72，支持Gradle 6.8及以下版本
+
+2、相关功能对应3.4.3
+
+## 3.4.3
+
+1、DoKit For Android Kotlin 编译插件版本为1.4.32，支持Gradle 6.8及以上版本
+
+2、Bug Fixed
+
+
+## 3.4.2.1
+
+1、DoKit For Android Kotlin 编译插件版本为1.3.72，支持Gradle 6.8及以下版本
+
+2、相关功能对应3.4.2
+
+## 3.4.2
+
+1、DoKit For Android Kotlin 编译插件版本为1.4.32，支持Gradle 6.8及以上版本
+
+2、一机多控新增数据录制功能，主要解决页面一致性的问题
+
+3、一机多控新增自定义事件接口和Client端统一回调，主要解决特殊控件手势等自定义长连接事件。
+
+4、DoKit 对外API收敛
+
+5、Bug Fixed
+
+
+## 3.4.0-alpha03
+
+1、去掉kotlin-android-exensions插件
+
+2、开放dokit性能数据(cpu、fps、内存、网络)，通过入口函数callback接口返回，具体参考android接入文档
+
+3、新增debug环境okhttp 扩展拦截器，通过入口函数netExtInterceptor设置，具体参考android接入文档
+
+
+## 3.4.0-alpha02
+
+由于jcenter事件的影响，我们需要将DoKit For Android迁移到mavenCentral，但是需要更改groupId.所以大家要注意一下，具体的更新信息如下：
+
+1、变更GroupId(io.github.didi.dokit)
+
+ //核心模块
+
+debugImplementation "io.github.didi.dokit:dokitx:3.4.0-alpha02"
+
+//文件同步模块
+
+debugImplementation "io.github.didi.dokit:dokitx-ft:3.4.0-alpha02"
+
+//一机多控模块
+
+debugImplementation "io.github.didi.dokit:dokitx-mc:3.4.0-alpha02"
+
+//weex模块
+
+debugImplementation "io.github.didi.dokit:dokitx-weex:3.4.0-alpha02"
+
+//no-op 模块
+
+releaseImplementation "io.github.didi.dokit:dokitx-no-op:3.4.0-alpha02"
+
+2、适配AS4.2
+
+3、去掉AndroidUtil库，减少编译冲突
+
+4、新增LBS专区
+
+5、DoKit 悬浮主Icon更新
+
+6、其他github issuebug修复
+
+**tips:**
+
+**1、v.3.3.5及以前的版本还是在jcenter维护，所以无需变更GroupId，3.4.0及以后的版本需要将GroupId变更为：io.github.didi.dokit**
+
+**2、需要添加mavenCentral()仓库**
+
+**3、由于本次内部框架变更比较多，所以当前是alpha02版本，欢迎大家给我提Bug**
+
+
+## 3.3.5（dokitx 对应androidx，dokit对应Android Support）
+
+1.为了更好的支持android官方androidx和support，dokit从3.3.1版本开始正式对sdk名字进行更新。具体如下：
+
+androidx===>com.didichuxing.doraemonkit:dokitx:3.3.5;
+
+support===>com.didichuxing.doraemonkit:dokit:3.3.5;
+
+2.修复与booster的冲突。相关issues:https://github.com/didi/booster/issues/202
+
+
 ## 3.3.4（dokitx 对应androidx，dokit对应Android Support）
 
 1.为了更好的支持android官方androidx和support，dokit从3.3.1版本开始正式对sdk名字进行更新。具体如下：
