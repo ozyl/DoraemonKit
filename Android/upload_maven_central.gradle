@@ -5,7 +5,9 @@ apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
 def DOKIT_VERSION = rootProject.ext.publish_config["version"]
+def OZYL_VERSION = rootProject.ext.publish_config["ozyl_version"]
 def DOKIT_GROUP_ID = rootProject.ext.publish_config["group_id"]
+def OZYL_GROUP_ID = rootProject.ext.publish_config["ozyl_group_id"]
 
 //生成源码注释
 task packageSourcesJar(type: Jar) {
@@ -59,9 +61,9 @@ afterEvaluate {
             release(MavenPublication) {
                 // The coordinates of the library, being set from variables that
                 // we'll set up in a moment
-                groupId DOKIT_GROUP_ID
+                groupId OZYL_GROUP_ID
                 artifactId project.ARTIFACT_ID
-                version DOKIT_VERSION
+                version OZYL_VERSION
                 artifact packageSourcesJar
                 // Two artifacts, the `aar` and the sources
                 if (project.ARTIFACT_ID == "dokitx-plugin") {
